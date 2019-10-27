@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34332C1F21DC3D5C00BCB6C5 /* ChessBoardRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34332C1D21DC3D5C00BCB6C5 /* ChessBoardRenderer.cpp */; };
+		34332C23233ACFC200BCB6C5 /* Constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34332C21233ACFC200BCB6C5 /* Constants.cpp */; };
+		34332C26233AD8E400BCB6C5 /* ChessBoardActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34332C24233AD8E400BCB6C5 /* ChessBoardActions.cpp */; };
+		34332C29233AD8FC00BCB6C5 /* ChessPieceActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34332C27233AD8FC00BCB6C5 /* ChessPieceActions.cpp */; };
+		34332C2C233AD91700BCB6C5 /* ChessScoreKeeper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34332C2A233AD91700BCB6C5 /* ChessScoreKeeper.cpp */; };
+		34332C30233AF93E00BCB6C5 /* ChessPlayerService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34332C2E233AF93E00BCB6C5 /* ChessPlayerService.cpp */; };
+		34332C3323443F6300BCB6C5 /* InputParserUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34332C3123443F6300BCB6C5 /* InputParserUtil.cpp */; };
+		347376A3233464E600C2D1F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 347376A2233464E600C2D1F2 /* main.cpp */; };
+		347376AC233583DF00C2D1F2 /* GameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 347376AA233583DF00C2D1F2 /* GameEngine.cpp */; };
+		34CB70622364F7F0001DCB9F /* ChessRulesService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34CB70602364F7F0001DCB9F /* ChessRulesService.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3473769D233464E600C2D1F2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		34332C1D21DC3D5C00BCB6C5 /* ChessBoardRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChessBoardRenderer.cpp; sourceTree = "<group>"; };
+		34332C1E21DC3D5C00BCB6C5 /* ChessBoardRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChessBoardRenderer.hpp; sourceTree = "<group>"; };
+		34332C21233ACFC200BCB6C5 /* Constants.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Constants.cpp; sourceTree = "<group>"; };
+		34332C22233ACFC200BCB6C5 /* Constants.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Constants.hpp; sourceTree = "<group>"; };
+		34332C24233AD8E400BCB6C5 /* ChessBoardActions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChessBoardActions.cpp; sourceTree = "<group>"; };
+		34332C25233AD8E400BCB6C5 /* ChessBoardActions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChessBoardActions.hpp; sourceTree = "<group>"; };
+		34332C27233AD8FC00BCB6C5 /* ChessPieceActions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChessPieceActions.cpp; sourceTree = "<group>"; };
+		34332C28233AD8FC00BCB6C5 /* ChessPieceActions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChessPieceActions.hpp; sourceTree = "<group>"; };
+		34332C2A233AD91700BCB6C5 /* ChessScoreKeeper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChessScoreKeeper.cpp; sourceTree = "<group>"; };
+		34332C2B233AD91700BCB6C5 /* ChessScoreKeeper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChessScoreKeeper.hpp; sourceTree = "<group>"; };
+		34332C2E233AF93E00BCB6C5 /* ChessPlayerService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChessPlayerService.cpp; sourceTree = "<group>"; };
+		34332C2F233AF93E00BCB6C5 /* ChessPlayerService.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChessPlayerService.hpp; sourceTree = "<group>"; };
+		34332C3123443F6300BCB6C5 /* InputParserUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputParserUtil.cpp; sourceTree = "<group>"; };
+		34332C3223443F6300BCB6C5 /* InputParserUtil.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputParserUtil.hpp; sourceTree = "<group>"; };
+		3473769F233464E600C2D1F2 /* CPlusPlus_Chess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CPlusPlus_Chess; sourceTree = BUILT_PRODUCTS_DIR; };
+		347376A2233464E600C2D1F2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		347376AA233583DF00C2D1F2 /* GameEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameEngine.cpp; sourceTree = "<group>"; };
+		347376AB233583DF00C2D1F2 /* GameEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameEngine.hpp; sourceTree = "<group>"; };
+		34CB70602364F7F0001DCB9F /* ChessRulesService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChessRulesService.cpp; sourceTree = "<group>"; };
+		34CB70612364F7F0001DCB9F /* ChessRulesService.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChessRulesService.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3473769C233464E600C2D1F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		342BA6E92336FC2800F4457E /* chess */ = {
+			isa = PBXGroup;
+			children = (
+				34332C2D233AD91F00BCB6C5 /* service */,
+				34332C20233ACFA200BCB6C5 /* constants */,
+				342BA6EC2336FC9D00F4457E /* util */,
+				342BA6EB2336FC8900F4457E /* actions */,
+				34332C1D21DC3D5C00BCB6C5 /* ChessBoardRenderer.cpp */,
+				34332C1E21DC3D5C00BCB6C5 /* ChessBoardRenderer.hpp */,
+			);
+			path = chess;
+			sourceTree = "<group>";
+		};
+		342BA6EA2336FC7A00F4457E /* game */ = {
+			isa = PBXGroup;
+			children = (
+				342BA6E92336FC2800F4457E /* chess */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		342BA6EB2336FC8900F4457E /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				34332C24233AD8E400BCB6C5 /* ChessBoardActions.cpp */,
+				34332C25233AD8E400BCB6C5 /* ChessBoardActions.hpp */,
+				34332C27233AD8FC00BCB6C5 /* ChessPieceActions.cpp */,
+				34332C28233AD8FC00BCB6C5 /* ChessPieceActions.hpp */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		342BA6EC2336FC9D00F4457E /* util */ = {
+			isa = PBXGroup;
+			children = (
+				34332C3123443F6300BCB6C5 /* InputParserUtil.cpp */,
+				34332C3223443F6300BCB6C5 /* InputParserUtil.hpp */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		34332C20233ACFA200BCB6C5 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				34332C21233ACFC200BCB6C5 /* Constants.cpp */,
+				34332C22233ACFC200BCB6C5 /* Constants.hpp */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		34332C2D233AD91F00BCB6C5 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				34332C2A233AD91700BCB6C5 /* ChessScoreKeeper.cpp */,
+				34332C2B233AD91700BCB6C5 /* ChessScoreKeeper.hpp */,
+				34332C2E233AF93E00BCB6C5 /* ChessPlayerService.cpp */,
+				34332C2F233AF93E00BCB6C5 /* ChessPlayerService.hpp */,
+				34CB70602364F7F0001DCB9F /* ChessRulesService.cpp */,
+				34CB70612364F7F0001DCB9F /* ChessRulesService.hpp */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		34737696233464E600C2D1F2 = {
+			isa = PBXGroup;
+			children = (
+				347376A1233464E600C2D1F2 /* CPlusPlus_Chess */,
+				347376A0233464E600C2D1F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		347376A0233464E600C2D1F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3473769F233464E600C2D1F2 /* CPlusPlus_Chess */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		347376A1233464E600C2D1F2 /* CPlusPlus_Chess */ = {
+			isa = PBXGroup;
+			children = (
+				342BA6EA2336FC7A00F4457E /* game */,
+				347376A9233583C300C2D1F2 /* Engine */,
+				347376A2233464E600C2D1F2 /* main.cpp */,
+			);
+			path = CPlusPlus_Chess;
+			sourceTree = "<group>";
+		};
+		347376A9233583C300C2D1F2 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				347376AA233583DF00C2D1F2 /* GameEngine.cpp */,
+				347376AB233583DF00C2D1F2 /* GameEngine.hpp */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3473769E233464E600C2D1F2 /* CPlusPlus_Chess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 347376A6233464E600C2D1F2 /* Build configuration list for PBXNativeTarget "CPlusPlus_Chess" */;
+			buildPhases = (
+				3473769B233464E600C2D1F2 /* Sources */,
+				3473769C233464E600C2D1F2 /* Frameworks */,
+				3473769D233464E600C2D1F2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPlusPlus_Chess;
+			productName = CPlusPlus_Chess;
+			productReference = 3473769F233464E600C2D1F2 /* CPlusPlus_Chess */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34737697233464E600C2D1F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Jesus' Blood";
+				TargetAttributes = {
+					3473769E233464E600C2D1F2 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 3473769A233464E600C2D1F2 /* Build configuration list for PBXProject "CPlusPlus_Chess" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 34737696233464E600C2D1F2;
+			productRefGroup = 347376A0233464E600C2D1F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3473769E233464E600C2D1F2 /* CPlusPlus_Chess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3473769B233464E600C2D1F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347376A3233464E600C2D1F2 /* main.cpp in Sources */,
+				34332C29233AD8FC00BCB6C5 /* ChessPieceActions.cpp in Sources */,
+				34332C2C233AD91700BCB6C5 /* ChessScoreKeeper.cpp in Sources */,
+				34332C30233AF93E00BCB6C5 /* ChessPlayerService.cpp in Sources */,
+				34CB70622364F7F0001DCB9F /* ChessRulesService.cpp in Sources */,
+				34332C3323443F6300BCB6C5 /* InputParserUtil.cpp in Sources */,
+				34332C26233AD8E400BCB6C5 /* ChessBoardActions.cpp in Sources */,
+				34332C1F21DC3D5C00BCB6C5 /* ChessBoardRenderer.cpp in Sources */,
+				347376AC233583DF00C2D1F2 /* GameEngine.cpp in Sources */,
+				34332C23233ACFC200BCB6C5 /* Constants.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		347376A4233464E600C2D1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		347376A5233464E600C2D1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		347376A7233464E600C2D1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		347376A8233464E600C2D1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3473769A233464E600C2D1F2 /* Build configuration list for PBXProject "CPlusPlus_Chess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347376A4233464E600C2D1F2 /* Debug */,
+				347376A5233464E600C2D1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		347376A6233464E600C2D1F2 /* Build configuration list for PBXNativeTarget "CPlusPlus_Chess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				347376A7233464E600C2D1F2 /* Debug */,
+				347376A8233464E600C2D1F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34737697233464E600C2D1F2 /* Project object */;
+}
