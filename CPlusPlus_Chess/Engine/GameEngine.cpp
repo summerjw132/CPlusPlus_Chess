@@ -16,6 +16,7 @@
 #include "ChessBoardRenderer.hpp"
 #include "Constants.hpp"
 #include "InputParserUtil.hpp"
+#include "ChessRulesService.hpp"
 
 using namespace std;
 
@@ -139,40 +140,46 @@ void PlayerMoveAction(){
 
         //TODO: Put this in a ChessPieceActions class
         if(action == "act"){
-            usleep(1000000);
             
+            usleep(1000000);
+
+            bool moveCoordinatesAreValid = false;
             string selectedPieceCoordinatesString = "";
             vector<int> selectedPieceCoordinates;
             vector<int> destinationCoordinates;
             
-            cout << "Select Piece coordinates (x,y): ";
+            while(!moveCoordinatesAreValid){
+                cout << "Select Piece coordinates (x,y): ";
 
-            cin >> selectedPieceCoordinatesString;
-            //TODO: Convert Selected coordinates into int
-            selectedPieceCoordinates = convertCoordinatesToInt(selectedPieceCoordinatesString);
-            //TODO: if Player selected valid piece
-                //playerOwnsPiece()
-                //coordinatesAreNotEmpty()
-            if(true){
-                //TODO: Show selected piece valid moves
-                string destinationCoordinatesString = "";
-                cout << "Select Destination coordinates (x,y): ";
-                cin >> destinationCoordinatesString;
-                
-                destinationCoordinates = convertCoordinatesToInt(destinationCoordinatesString);
-                
-                //TODO: if Move is valid
-                    //moveDestinationMatchesPieceMovementPattern()
-                    //coordinateNotOutOfBounds()
-                if(true){
-                    //TODO: Move piece from selectedPieceCoordinates to destinationCoordinates
-                    testMovePiece(selectedPieceCoordinates, destinationCoordinates);
+                cin >> selectedPieceCoordinatesString;
+                //TODO: Convert Selected coordinates into int
+                selectedPieceCoordinates = convertCoordinatesToInt(selectedPieceCoordinatesString);
+                //TODO: if Player selected valid piece
+                    //playerOwnsPiece()
+                    //coordinatesAreNotEmpty()
+                if(selectedMoveIsValid(selectedPieceCoordinates[0], selectedPieceCoordinates[1], GetCurrentPlayer())){
                     
-                    cout << "Moving piece from " << selectedPieceCoordinatesString << " to " << destinationCoordinatesString;
-                    //TODO: Determine if win condition was met
-                        //wasWinConditionMet(int board)
+                    //TODO: Show selected piece valid moves
+                    string destinationCoordinatesString = "";
+                    cout << "\nSelect Destination coordinates (x,y): ";
+                    cin >> destinationCoordinatesString;
+                    
+                    destinationCoordinates = convertCoordinatesToInt(destinationCoordinatesString);
+                    
+                    //TODO: if Move is valid
+                        //moveDestinationMatchesPieceMovementPattern()
+                        //coordinateNotOutOfBounds()
+                    if(true){
+                        //TODO: Move piece from selectedPieceCoordinates to destinationCoordinates
+                        testMovePiece(selectedPieceCoordinates, destinationCoordinates);
+                        
+                        cout << "Moving piece from " << selectedPieceCoordinatesString << " to " << destinationCoordinatesString;
+                        //TODO: Determine if win condition was met
+                            //wasWinConditionMet(int board)
+                        moveCoordinatesAreValid = true;
+                    }
+                    
                 }
-                
             }
             //if moveCoordinates are valid...
             
@@ -290,7 +297,7 @@ vector<int> convertCoordinatesToInt(string coordinates){
     //for each coordinate,
     for(int i=0; i < stringCoordinates.size(); i++){
         int coordinateValue = std::stoi(stringCoordinates[i]);
-        cout << "Received coordinate value to_int: " << coordinateValue;
+        //cout << "Received coordinate value to_int: " << coordinateValue;
         intCoordinates.push_back(coordinateValue);
         
     }
@@ -298,4 +305,16 @@ vector<int> convertCoordinatesToInt(string coordinates){
         //PushBack to intCoordinates vector
     
     return intCoordinates;
+}
+
+bool selectedMoveIsValid(int x, int y, int currentPlayer){
+    if(CoordinatesNotOutOfBounds(x, y)){
+
+        if (PlayerOwnsPiece(GetCellFromBoard(x, y), currentPlayer)
+            && CoordinatesAreNotEmpty(GetCellFromBoard(x, y))){
+            
+            return true;
+        }
+    }
+    return false;
 }

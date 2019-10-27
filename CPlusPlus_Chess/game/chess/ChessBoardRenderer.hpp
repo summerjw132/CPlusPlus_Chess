@@ -23,6 +23,7 @@ using namespace std;
 void InitBoard();
 void BuildInitialBoard( int currentPlayer); // Builds out the initial board
 void RenderBoard( int currentPlayer); //Re-renders the board to the view after updates
+string GetCellFromBoard(int x, int y);
 static void buildLineBreak(int row);
 
 void renderChessBoard(int currentPlayer, int board[BOARD_X][BOARD_Y]);

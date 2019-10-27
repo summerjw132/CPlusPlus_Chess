@@ -56,8 +56,8 @@ vector<string> delineateString(string line, char delimeter){
     }
       
     // Printing the token vector
-    for(int i = 0; i < tokens.size(); i++)
-        cout << tokens[i] << '\n';
-    
+//    for(int i = 0; i < tokens.size(); i++)
+//        cout << tokens[i] << '\n';
+//    
     return tokens;
 }

@@ -93,6 +93,11 @@ void RenderBoard( int currentPlayer){
 }
 
 
+string GetCellFromBoard(int x, int y){
+    return board[y][x];
+}
+
+
 static void buildLineBreak(int row) {
     if (row < BOARD_X-1) {
         string lineBreak ="\n";
@@ -128,7 +133,7 @@ void buildColumnIndexes(int columnCount){
 
 void testMovePiece(vector<int> selectedPieceCoordinates, vector<int> destinationCoordinates ){
     string currentPiece = board[selectedPieceCoordinates[1]][selectedPieceCoordinates[0]];
-    board[selectedPieceCoordinates[1]][selectedPieceCoordinates[0]];
+    board[selectedPieceCoordinates[1]][selectedPieceCoordinates[0]] = CHESS_EMPTY;
     
     board[destinationCoordinates[1]][destinationCoordinates[0]] = currentPiece;
     

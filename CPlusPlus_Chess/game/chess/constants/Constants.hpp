@@ -25,7 +25,7 @@ const int PLAYER_THREE = 3;
 const int PLAYER_FOUR = 4;
 
 const int EMPTY = 0;
-const string CHESS_EMPTY = "--";
+const string CHESS_EMPTY = "  ";
 const string CHESS_PAWN = "P";
 const string CHESS_ROOK = "R";
 const string CHESS_KNIGHT = "N";
@@ -33,5 +33,3 @@ const string CHESS_BISHOP = "B";
 const string CHESS_QUEEN = "Q";
 const string CHESS_KING = "K";
 #endif /* Constants_hpp */
-
-

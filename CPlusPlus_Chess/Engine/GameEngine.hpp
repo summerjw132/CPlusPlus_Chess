@@ -38,5 +38,6 @@ void EndGame();
 bool validResponseInput(string inputString, string listOfValidMoves[]);
 
 vector<int> convertCoordinatesToInt(string coordinates);
+bool selectedMoveIsValid(int x, int y, int currentPlayer);
 #endif /* GameEngine_hpp */
 
